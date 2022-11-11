@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-	width: 90%;
-	margin: 0 auto;
+	padding: 40px 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 0;
 	.logo {
 		width: clamp(12rem, 20vw, 14.375rem);
 		img {
