@@ -1,8 +1,10 @@
 import { Container } from './headerStyles';
 import homeIcon from '../../assets/logo/homeIcon.svg';
+import { FaBars } from 'react-icons/fa';
 const Header = () => {
 	return (
 		<Container>
+			<FaBars size={'30px'} className='ham' />
 			<figure className='logo'>
 				<img src={homeIcon} alt='home_icon' />
 			</figure>

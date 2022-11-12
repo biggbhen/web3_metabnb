@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
+	position: relative;
 	padding: 40px 7%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	.ham{
+		position: absolute;
+		right:7%;
+		display:none;
+	}
 	.logo {
 		width: clamp(10rem, 20vw, 14.375rem);
 		img {
@@ -30,6 +36,7 @@ export const Container = styled.section`
 		color: ${({ theme }) => (theme ? theme.colors.plain : '#fff')};
 	}
 	@media screen and (max-width: 970px) {
+	
 		ul {
 			width: 45%;
 		}
@@ -37,4 +44,16 @@ export const Container = styled.section`
 			padding: 10px 20px;
 		}
 	}
+		@media screen and (max-width: 815px) {
+				justify-content:unset;
+		.ham{
+			display:block;
+		}
+			ul {
+				display none
+			}
+			.button {
+				margin:0 auto;
+			}
+		}
 `;
