@@ -20,7 +20,7 @@ export const Container = styled.div`
 			margin-bottom: 2.8rem;
 		}
 		p {
-			font-size: clamp(1.15rem, 2vw, 1.4rem);
+			font-size: clamp(1.15rem, 2vw, 1.3rem);
 			line-height: 35px;
 			margin-bottom: 2.8rem;
 		}
@@ -35,10 +35,11 @@ export const Container = styled.div`
 	}
 	.rightSect {
 		align-items center ;
+		// border:1px solid blue;
   .threenft {
 			// border: 1px solid white;
-			height: clamp(25rem, 50vw, 33.75rem);
-			width: 95%;
+			height: clamp(25rem, 50vw, 32rem);
+			width: 90%;
 			img {
 				width: 100%;
 				height: 100%;
