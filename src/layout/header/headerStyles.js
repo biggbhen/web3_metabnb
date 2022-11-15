@@ -25,9 +25,16 @@ export const Container = styled.section`
 		align-items: center;
 		width: 40%;
 	}
-	li {
+	li, a {
 		cursor: pointer;
+		color:rgba(67, 67, 67, 1);
 		font-size: clamp(1rem, 1.5vw, 1.2rem);
+		:hover{
+			color:rgba(160, 34, 121, 1);
+		}
+	}
+	.active{
+				color:rgba(160, 34, 121, 1);
 	}
 	.button {
 		border: none;
@@ -35,6 +42,7 @@ export const Container = styled.section`
 		background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 		border-radius: 7px;
 		color: ${({ theme }) => (theme ? theme.colors.plain : '#fff')};
+		cursor: pointer;
 	}
 	@media screen and (max-width: 970px) {
 		ul {
