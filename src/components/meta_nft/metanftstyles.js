@@ -38,7 +38,7 @@ export const Container = styled.div`
 		// border:1px solid blue;
 		.threenft {
 			// border: 1px solid white;
-			height: clamp(25rem, 50vw, 32rem);
+			height: clamp(20rem, 50vw, 32rem);
 			width: 90%;
 			img {
 				width: 100%;
@@ -58,7 +58,7 @@ export const Container = styled.div`
 			width: 100%;
 		}
 		.info {
-			margin-bottom: 1.5rem;
+			margin-bottom: 1rem;
 			h2{
 							font-size: clamp(2.1rem, 7vw, 2.35rem);
 			}

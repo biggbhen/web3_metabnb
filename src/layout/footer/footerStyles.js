@@ -47,6 +47,7 @@ export const Container = styled.footer`
 		}
 	}
 	@media screen and (max-width: 815px) {
+		padding: 40px 3%;
 		> * {
 			width: 40%;
 		}
