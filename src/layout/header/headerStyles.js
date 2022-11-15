@@ -6,10 +6,11 @@ export const Container = styled.section`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	.ham{
+	.ham {
+		color: rgba(160, 34, 121, 1);
 		position: absolute;
-		right:7%;
-		display:none;
+		right: 7%;
+		display: none;
 	}
 	.logo {
 		width: clamp(10rem, 20vw, 14.375rem);
@@ -36,7 +37,6 @@ export const Container = styled.section`
 		color: ${({ theme }) => (theme ? theme.colors.plain : '#fff')};
 	}
 	@media screen and (max-width: 970px) {
-	
 		ul {
 			width: 45%;
 		}
@@ -44,8 +44,11 @@ export const Container = styled.section`
 			padding: 10px 20px;
 		}
 	}
-		@media screen and (max-width: 815px) {
-				justify-content:unset;
+	@media screen and (max-width: 815px) {
+		padding: 40px 3%;
+	}
+	@media screen and (max-width: 745px) {
+				// justify-content:unset;
 		.ham{
 			display:block;
 		}
@@ -53,7 +56,7 @@ export const Container = styled.section`
 				display none
 			}
 			.button {
-				margin:0 auto;
+				display :none;
 			}
-		}
+	}
 `;

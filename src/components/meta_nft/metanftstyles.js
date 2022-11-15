@@ -20,7 +20,7 @@ export const Container = styled.div`
 			margin-bottom: 2.8rem;
 		}
 		p {
-			font-size: clamp(1.15rem, 2vw, 1.3rem);
+			font-size: clamp(1.05rem, 2vw, 1.3rem);
 			line-height: 35px;
 			margin-bottom: 2.8rem;
 		}
@@ -34,16 +34,41 @@ export const Container = styled.div`
 		}
 	}
 	.rightSect {
-		align-items center ;
+		align-items center;
 		// border:1px solid blue;
-  .threenft {
+		.threenft {
 			// border: 1px solid white;
 			height: clamp(25rem, 50vw, 32rem);
 			width: 90%;
 			img {
 				width: 100%;
 				height: 100%;
-    display: block
+				display: block;
+			}
+		}
+	}
+	@media screen and (max-width: 815px) {
+		padding: 5% 3%;
+	}
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+		.info,
+		.rightSect {
+			// border: 1px solid red;
+			width: 100%;
+		}
+		.info {
+			margin-bottom: 1.5rem;
+			h2{
+							font-size: clamp(2.1rem, 7vw, 2.35rem);
+			}
+			h2, p{
+				margin-bottom:2.4rem;
+			}
+		}
+		.rightSect{
+			.threenft{
+				width:80%;
 			}
 		}
 	}
