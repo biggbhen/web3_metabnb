@@ -5,30 +5,31 @@ import A from '../../assets/nfts/card1.png';
 const Card = () => {
 	return (
 		<Container>
-			<div className='manynfts'>
-				<div className='nfts'>
-					<img src={A} alt='nft1' id='firstnfts' />
+			<figure>
+				<img src={A} alt='nft' />
+			</figure>
+
+			<section className='info'>
+				<div>
+					<p>Desert king</p>
+					<p> 1MBT per night </p>
 				</div>
 
-				<div className='contents'>
-					<div className='texts'>
-						<p className='desertking'>Desert king</p>
-						<p className='km'>2345km away</p>
-						<p className='iconstar'>
-							<img src={starIcon} alt='iconstar' id='iconstars' />
-							<img src={starIcon} alt='iconstar' id='iconstars' />
-							<img src={starIcon} alt='iconstar' id='iconstars' />
-							<img src={starIcon} alt='iconstar' id='iconstars' />
-							<img src={starIcon} alt='iconstar' id='iconstars' />
-						</p>
-					</div>
+				<div>
+					<p>2345km away</p>
+					<p className='weeks'>available for 2weeks stay</p>
+				</div>
 
-					<div className='mbt'>
-						<h3> 1MBT per night </h3>
-						<p className='weeks'>available for 2weeks stay</p>
+				<div>
+					<div className='iconstar'>
+						<img src={starIcon} alt='iconstar' id='iconstars' />
+						<img src={starIcon} alt='iconstar' id='iconstars' />
+						<img src={starIcon} alt='iconstar' id='iconstars' />
+						<img src={starIcon} alt='iconstar' id='iconstars' />
+						<img src={starIcon} alt='iconstar' id='iconstars' />
 					</div>
 				</div>
-			</div>
+			</section>
 		</Container>
 	);
 };

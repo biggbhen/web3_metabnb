@@ -1,67 +1,41 @@
 import styled from 'styled-components';
+
 export const Container = styled.div`
-	.manynfts {
-		width: 292px;
-		height: 372px;
-		box-sizing: border-box;
-		border: 1px solid #d7d7d7;
-		border-radius: 15px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
-	.nfts {
-		display: flex;
-		justify-content: center;
-	}
-	#firstnfts {
-		width: 260px;
-		height: 265px;
-	}
-	.contents {
-		display: flex;
-		justify-content: space-around;
-	}
-	.desertking {
-		width: 67px;
-		height: 14px;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		color: #434343;
-	}
-	.km {
-		width: 83px;
-		height: 14px;
-		margin-top: 10px;
+	padding: 10px;
+	width: 15rem;
+	border: 1px solid #d7d7d7;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+
+	figure {
+		width: 100%;
+		height: clamp(13rem, 20vw, 16rem);
 		margin-bottom: 10px;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		color: #434343;
+		// border: 1px solid red;
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
-	#iconstars {
-		width: 12px;
-		height: 12px;
-		border-radius: 1px;
-		margin: 2.6px;
-	}
-	h3 {
-		width: 88px;
-		height: 14px;
-		margin-left: 60px;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 12px;
-		color: #434343;
-	}
-	.weeks {
-		width: 148px;
-		height: 14px;
-		margin-top: 10px;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		color: #434343;
+
+	.info {
+		// border: 1px solid red;
+		> * {
+			// border: 1px solid red;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 7px;
+		}
+		p {
+			font-size: clamp(0.6rem, 1.5vw, 0.75rem);
+		}
+		.iconstar {
+			display: flex;
+			justify-content: space-between;
+			// border: 1px solid red;
+			width: clamp(4.625rem, 7vw, 5.625rem);
+		}
 	}
 `;

@@ -6,7 +6,16 @@ const Metahomes = () => {
 	return (
 		<Container>
 			<h2>Inspiration for your next adventure</h2>
-			<Card />
+			<section className='grid'>
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+			</section>
 		</Container>
 	);
 };
