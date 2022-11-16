@@ -29,7 +29,6 @@ export const Container = styled.div`
 		display: flex;
 		align-items: center;
 		// border: 1px solid red;
-		width: max-content;
 		cursor: pointer;
 		display: none;
 	}

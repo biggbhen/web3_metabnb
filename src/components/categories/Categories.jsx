@@ -16,10 +16,13 @@ const Categories = () => {
 					<input type='text' placeholder='Location' />
 				</li>
 			</ul>
-			<div className='ctg'>
-				<p>category</p>
-				<div className='icon'></div>
-			</div>
+			<ul className='ctg'>
+				<li>Restaurant</li>
+				<li>Category</li>
+				<li>
+					<input type='text' placeholder='Location' />
+				</li>
+			</ul>
 		</Container>
 	);
 };
