@@ -13,7 +13,16 @@ export const Container = styled.div`
 				color: rgba(160, 34, 121, 1);
 			}
 		}
-
+		.find {
+			// border: 1px solid red;
+			position: relative;
+			.findIcon {
+				position: absolute;
+				right: 7px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
 		input {
 			padding: 7px;
 			border-radius: 5px;
