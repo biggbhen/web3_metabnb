@@ -11,6 +11,7 @@ export const Container = styled.div`
 			cursor: pointer;
 			:hover {
 				color: rgba(160, 34, 121, 1);
+				transform: scale(1.02);
 			}
 		}
 		.find {
