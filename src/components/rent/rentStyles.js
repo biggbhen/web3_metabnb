@@ -45,6 +45,12 @@ export const Container = styled.section`
 				color: #fff;
 				border-top-right-radius: 10px;
 				border-bottom-right-radius: 10px;
+				:hover {
+					box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+					-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+					-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+					transform: scale(1.02);
+				}
 			}
 		}
 	}
@@ -62,11 +68,13 @@ export const Container = styled.section`
 			' c c . . ';
 
 		> * {
-			/*   padding: 20px 0; */
 			height: clamp(8rem, 15vw, 10rem);
 			img {
 				width: 100%;
 				height: 100%;
+				:hover {
+					transform: scale(1.02);
+				}
 			}
 		}
 		.item_a {

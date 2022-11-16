@@ -31,6 +31,12 @@ export const Container = styled.div`
 			font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 			color: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 			width: max-content;
+			:hover {
+				box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+				-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+				transform: scale(1.02);
+			}
 		}
 	}
 	.rightSect {

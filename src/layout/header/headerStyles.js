@@ -32,7 +32,7 @@ export const Container = styled.section`
 			width: 100%;
 			margin-top:5rem;
 		// border:1px solid red;
-li, a{
+li, a{	
 	margin-bottom:15px;
 		color:rgba(67, 67, 67, 1);
 }
@@ -72,6 +72,7 @@ li, a{
 		font-size: clamp(1rem, 1.5vw, 1.2rem);
 		:hover{
 			color:rgba(160, 34, 121, 1);
+			transform:scale(1.02);
 		}
 	}
 	}
@@ -86,6 +87,12 @@ li, a{
 		border-radius: 7px;
 		color: ${({ theme }) => (theme ? theme.colors.plain : '#fff')};
 		cursor: pointer;
+		:hover{
+			box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+		transform: scale(1.05);
+		}
 	}
 	@media screen and (max-width: 970px) {
 		ul {

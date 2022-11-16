@@ -8,7 +8,13 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 15px;
-
+	cursor: pointer;
+	:hover {
+		box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+		transform: scale(1.05);
+	}
 	figure {
 		width: 100%;
 		height: clamp(13rem, 20vw, 16rem);
