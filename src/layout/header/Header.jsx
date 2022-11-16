@@ -10,6 +10,7 @@ const Header = () => {
 	return (
 		<Container>
 			<FaBars size={'30px'} className='ham' />
+
 			<NavLink to={'/'}>
 				<figure className='logo'>
 					<img src={homeIcon} alt='home_icon' />
