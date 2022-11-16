@@ -1,12 +1,11 @@
 import { Container } from './cardStyles';
 import starIcon from '../../assets/starIcon.svg';
-import A from '../../assets/nfts/card1.png';
 
-const Card = () => {
+const Card = ({ icon }) => {
 	return (
 		<Container>
 			<figure>
-				<img src={A} alt='nft' />
+				<img src={icon} alt='nft' />
 			</figure>
 
 			<section className='info'>
